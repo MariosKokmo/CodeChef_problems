@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n = int(input())    perm = range(1,n+1)    bottom_half = []    upper_half = []    i = n    while i>=1:        upper_half.append(i)        if i-1<=0:            break        bottom_half.append(i-1)        i=i-2    result = bottom_half+upper_half[::-1]    print(" ".join([str(r) for r in result]))
